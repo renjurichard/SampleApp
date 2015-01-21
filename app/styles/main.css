@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+/*| PAGE LAYOUT |*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  /*text-align: center;*/ /*IE doesn't ~like this*/
+  cursor: default;
+}
+
+#pgWrapper {
+  z-index: 1;
+  min-height: 100%;
+  height: auto !important;
+  
+  min-width: 1000px;
+  width: 100%;
+  margin:0 auto;
+  position: absolute;
+  overflow: auto;
+  text-align: center;
+  background: #363f48;
+}
+
+#pgContent {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 50px;
+    overflow: auto;
+  background: #c9c8ce;
+    height:100%;
+}
+
+ #pgContent span { 
+    display: inline-block;
+  vertical-align: middle;
+  line-height: normal; 
+  font-size:150%;
+  font-weight: bold;
+  color:white;
+  }
+
+#footWrapper {
+  z-index: 2;
+  height: 50px;
+  min-width: 940px;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  bottom: 0px;
+  background: #C00;
+}
+.navbar .nav.pull-right {
+     float: right;
+    margin-right: 98px; /*set margin this way in your custom styesheet*/
+  }
+
+.navbar ul li  span a{
+    display:inline-block;
+    padding:14px 20px;
+    color:#010101;
+}
+
+.logo{
+  width:250px;
+  height:60px;
+}
+
+.navbar-header  a{
+  padding-left:80px;
+}
+
+#pgWrapper span{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/*| END PAGE LAYOUT |*/

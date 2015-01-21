@@ -1,0 +1,22 @@
+<nav class="navbar navbar-default" role="navigation">
+   <div class="navbar-header logo" style="background-image:url({{appData.general.logo}});background-repeat:no-repeat;">
+      <a class="navbar-brand" href="#">{{appData.general.name}}</a>
+   </div>
+   <div>
+  
+        <div>
+      <!--Right Align-->
+      <ul class="nav navbar-nav navbar-right pull-right">
+         <li ng-repeat="menuItem in appData.navigation">
+            <span ng-if="!menuItem.subnav"><a href="#about">{{menuItem.title}}</a></span>
+            <span ng-if="menuItem.subnav.length>0">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{menuItem.title}}<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li ng-repeat="submenuItem in menuItem.subnav"><a href="#">{{submenuItem.title}}</a></li>
+            </ul>
+            </span>
+        </li>
+      </ul>
+
+   </div>
+</nav>
